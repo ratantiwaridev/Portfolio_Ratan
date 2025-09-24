@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body class="bg-body text-white min-h-screen">
+    <header class="header">
+      <nav class="navbar">
+        <div class="header-container">
+          <div class="nav-links"></div>
+          <a href="#home" class="logo">Ratan.</a>
+            <a href="#home" class="nav-link">
+              <i class="fas fa-home md-hidden"></i>
+              <span class="md-inline-block">Home</span>
+            </a>
+            <a href="#profile" class="nav-link">
+              <i class="fas fa-user-circle md-hidden"></i>
+              <span class="md-inline-block">Profile</span>
+            </a>
+            <a href="#projects" class="nav-link">
+              <i class="fas fa-project-diagram md-hidden"></i>
+              <span class="md-inline-block">Projects</span>
+            </a>
+            <a href="#certifications" class="nav-link">
+              <i class="fas fa-award md-hidden"></i>
+              <span class="md-inline-block">Certifications</span>
+            </a>
+            <a href="#contact" class="nav-link">
+              <i class="fas fa-envelope md-hidden"></i>
+              <span class="md-inline-block">Contact</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+      <!-- Home Section -->
+      <section id="home" class="section home-section">
+        <br>
+        <h1 class="main-heading">Welcome to My Portfolio</h1>
+        <div class="profile-image-container">
+                <img src="https://placehold.co/400x400/2563eb/ffffff?text=Your+Photo" alt="A professional headshot of myself" class="profile-image">
+        </div>
+        <p class="sub-heading">
+          I'm a passionate full-stack developer dedicated to building impactful
+          and elegant web applications.
+        </p>
+        <div class="flex-center-row-wrap">
+          <a href="#" class="btn btn-primary">
+            <i class="fas fa-download icon"></i>
+            <span>Download Resume</span>
+          </a>
+          <div class="social-links">
+            <a href="https://github.com/ratantiwaridev" target="_blank" class="social-icon-link">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ratantiwari/" target="_blank" class="social-icon-link"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <a href="https://leetcode.com/u/ratantiwari2003/" target="_blank" class="social-icon-link"
+              ><i class="fas fa-code fa-2x"></i
+            ></a>
+            <a href="https://www.instagram.com/ratan_tiwari19/?hl=en" target="_blank" class="social-icon-link"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+            <a href="https://x.com/RatanTi60846016" target="_blank" class="social-icon-link"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+          </div>
+        </div>
+       
+      </section>
+
+      <!-- Profile Section (hidden by default) -->
+      <section id="profile" class="section profile-section hidden">
+        <br><br>
+        <h2 class="section-heading">My Profile</h2>
+        <div class="profile-card">
+          <div class="profile-tabs">
+            <button data-tab="skills" class="tab-button active-tab-button">
+              My Skills
+            </button>
+            <button data-tab="experience" class="tab-button">
+              My Experience
+            </button>
+            <button data-tab="education" class="tab-button">
+              My Education
+            </button>
+            <button data-tab="about" class="tab-button">About Me</button>
+          </div>
+
+          <div id="skills-tab" class="tab-content active-tab">
+            <div class="skills-grid">
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Django</span>
+              <span class="skill-pill">Flask</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">MongoDB</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">Figma</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Machine Learning</span>
+              <span class="skill-pill">Generative AI</span>
+              <span class="skill-pill">n8n Agents</span>            </div>
+          </div>
+
+          <div id="experience-tab" class="tab-content hidden">
+            <div class="tab-content-list">
+                <div class="list-item-border">
+                <h4 class="list-title">Front-End Intern</h4>
+                <p class="list-subtitle">Edunet Foundation</p>
+                <p class="list-date">Aug 2025 - Oct 2025</p>
+                <p class="list-description">
+                  Assisted in building responsive user interfaces with HTML,
+                  CSS, and JavaScript. Gained hands-on experience with modern
+                  development workflows.
+                </p>
+              </div>
+              <div class="list-item-border">
+                <h4 class="list-title">Ai Agent Builder</h4>
+                <p class="list-subtitle">IBM SkillsBuild</p>
+                <p class="list-date">July 2025 - Aug 2025</p>
+                <p class="list-description">
+                  Developed and maintained web applications using React and
+                  Node.js. Collaborated with a team of 5 to deliver high-quality
+                  code.
+                </p>
+              </div>
+              <div class="list-item-border">
+                <h4 class="list-title">Data Analytics Intern</h4>
+                <p class="list-subtitle">IBM SkillsBuild</p>
+                <p class="list-date">Nov 2023 - Dec 2023</p>
+                <p class="list-description">
+                  Assisted in building responsive user interfaces with HTML,
+                  CSS, and JavaScript. Gained hands-on experience with modern
+                  development workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="education-tab" class="tab-content hidden">
+            <div class="tab-content-list">
+              <div class="list-item-border list-item-green">
+                <h4 class="list-title">
+                  Bachelor of Technology in Computer Science & Information
+                  Technology
+                </h4>
+                <p class="list-subtitle-green">Ajay Kumar Garg Engineering College</p>
+                <p class="list-date">2022 - present</p>
+              </div>
+              <div class="list-item-border list-item-green">
+                <h4 class="list-title">
+                  BS in Data Science & Applications.
+                </h4>
+                <p class="list-subtitle-green">Indian Institute of Technology, MADRAS</p>
+                <p class="list-date">2022 - present</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="about-tab" class="tab-content hidden">
+            <p class="about-text">
+              I am a passionate and dedicated full-stack developer with a strong
+              foundation in modern web technologies. I love creating responsive,
+              user-friendly, and performant applications. I am always eager to
+              learn new things and solve complex problems.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section (hidden by default) -->
+      <section id="projects" class="section hidden project-section">
+        <br><br>
+        <h2 class="section-heading">My Projects</h2>
+        <div class="project-card">
+          <div class="project-slider-controls">
+            <button id="prev-project-button" class="slider-button">
+              <i class="fas fa-chevron-left fa-2x"></i>
+            </button>
+            <div id="project-slider" class="project-content-container">
+              <!-- Project content will be dynamically updated here -->
+              <div id="project-content"></div>
+            </div>
+            <button id="next-project-button" class="slider-button">
+              <i class="fas fa-chevron-right fa-2x"></i>
+            </button>
+          </div>
+          <p id="project-counter" class="project-counter-text"></p>
+        </div>
+      </section>
+
+      <!-- Certifications Section (hidden by default) -->
+      <section id="certifications" class="section hidden certification-section">
+        <br><br>
+        <h2 class="section-heading">My Certifications</h2>
+        <div class="cert-card">
+          <p class="cert-intro-text">
+            Here are some of the certifications I have earned.
+          </p>
+          <div class="cert-grid">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cert-link"
+            >
+              <span class="cert-title">Full Stack Web Development</span>
+              <i class="fas fa-award icon-lg"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cert-link"
+            >
+              <span class="cert-title">React & Redux Certification</span>
+              <i class="fas fa-award icon-lg"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cert-link"
+            >
+              <span class="cert-title">AWS Certified Cloud Practitioner</span>
+              <i class="fas fa-award icon-lg"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cert-link"
+            >
+              <span class="cert-title">Data Structures & Algorithms</span>
+              <i class="fas fa-award icon-lg"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--contact section-->
+      <section id="contact" class="section contact-section hidden">
+        <h2 class="section-heading">Contact Me</h2>
+        <div class="contact-card">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                class="form-input"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-full btn-submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">&copy; 2025 Ratan T. All Rights Reserved.</footer>
+  </body>
+</html>
