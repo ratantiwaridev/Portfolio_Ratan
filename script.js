@@ -5,20 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabContents = document.querySelectorAll('.tab-content');
     const projects = [
         {
-            title: 'Project A',
-            description: 'A multi-page e-commerce website built with the MERN stack. Features user authentication, a shopping cart, and a secure checkout process.',
+            title: 'Music Recommendation System',
+            description: ' Built a Python-based recommendation engine using Spotify API and a Kaggle dataset (50K+ records) to suggest personalized tracks. Applied EDA, data preprocessing, and recommendation algorithms to improve accuracy.',
             githubUrl: '#',
             liveUrl: '#'
         },
         {
-            title: 'Project B',
-            description: 'A real-time chat application using React and Firebase. Users can create rooms, send messages, and share media in a responsive interface.',
+            title: 'Vehicle Parking App',
+            description: 'Developed a multi-user vehicle parking application with distinct admin and user dashboards, providing comprehensive management of parking infrastructure and personal reservation tracking.',
             githubUrl: '#',
             liveUrl: '#'
         },
         {
-            title: 'Project C',
-            description: 'A data visualization dashboard for a fictional company. It uses D3.js to render interactive charts and graphs from a REST API.',
+            title: 'AI Powered Chatbot',
+            description: 'Developed a chatbot using n8n AI agents with Google Cloud APIs and Pinecone for RAG. Retrieved knowledge dynamically from Google Drive documents for domain-specific Q&A. Tech Stack: n8n, Google Cloud APIs, Pinecone.',
             githubUrl: '#',
             liveUrl: '#'
         },
